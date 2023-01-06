@@ -13,7 +13,7 @@ const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 // console.log(process.env.STRIPE_SECRET_KEY)  
 
-app.post("/getshipmentdetails", function (req, res) {
+app.post("/api/getshipmentdetails", function (req, res) {
 
   try {
     shippo.shipment.create(
